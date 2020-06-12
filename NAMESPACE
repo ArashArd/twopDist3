@@ -1,0 +1,34 @@
+exportPattern("^[[:alpha:]]+")
+exportMethods(
+    "ConfInt",
+    'dplot',
+#'plot',
+    "show",
+    "summary" 
+)
+export(ConfInt
+, dplot
+#, plot
+)
+ importFrom("methods", "as", "is", "new", "slot", "slot<-", "slotNames",
+             "callNextMethod", "existsMethod", "signature",
+             "show")
+			 
+			 
+importFrom("graphics", "hist", "legend", "lines", "par", "rug", "text",'plot')
+importFrom("stats", ".getXlevels", "coef", "density", "dlogis",
+             "dnorm", "fitted", "is.empty.model", "ks.test", "lsfit",
+             "median", "model.frame", "model.matrix", "model.offset",
+             "model.response", "pgamma", "plogis", "pnorm",
+             "printCoefmat", "pt", "qgamma", "qlogis", "qnorm", "qt",
+             "quantile", "runif", "sd", "setNames", "uniroot")
+			 
+			 
+			 
+importFrom("stats4", confint) 
+exportClasses(
+    "twopDist",
+     "twopnormlap",
+     "twoplogistic",
+     "twoplaplace" 
+)
